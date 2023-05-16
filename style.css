@@ -1,21 +1,21 @@
 *{
     margin: 0;
     padding:0;
+    font-family: 'IM Fell Double Pica SC', serif;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&display=swap');
 
 
-
-/*--Dropdown--*/
+/*--Dropdown burgermenu--*/
 .dropbtn{
-    background-color: rgba(0, 74, 164, 1);
+    background-color: transparent;
     position: relative;
     right: 0%;
     color: #fff;
-    padding-top: 5px;
+    padding-top: 6px;
     font-size: 100%;
     border: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .dropdown{
     position: relative;
@@ -28,7 +28,7 @@
     position: absolute;
     background-color: #f1f1f1;
     min-width: 300px;
-    min-height: 350px;
+    min-height: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -36,11 +36,193 @@
   color: #000;
   padding: 12px 16px;
   display: block;
-  text-align: left;
-  font-size: 70%;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  font-size: 120%;
+  text-shadow: 0.1px 0.1px green;
+  text-decoration: none;
 }
 
-.dropdown-content a:hover{background-color: #ddd;}
+.dropdown-content a:hover{
+    color: green;
+    transition: 4.;
+}
+
 .dropdown:hover .dropdown-content{display: block;}
-.dropdown:hover .dropbtn{background-color: rgba(0, 74, 164, 1);}
+
+
+/*Header*/
+
+header{
+    width: 100%;
+    height: 45px;
+    background-color: #1E1E1E; 
+    position: fixed;
+    z-index: 5;
+}
+
+.body{
+    overflow-x: hidden;
+    width: auto;
+    height: auto;
+}
+
+
+/*Forsiden*/
+
+#forsidebillede{
+position: relative;
+width: 100%;
+padding-top: 10%;
+display: block;
+z-index: 0;
+
+}
+
+.forside h1{
+    color: #000;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'IM Fell Double Pica SC', serif;
+    text-shadow: 2px 2px green;
+
+}
+.forside h2{
+    color: #000;
+    position: relative;
+    top: 110px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'IM Fell Double Pica SC', serif;
+    text-shadow: 1px 1px green;
+}
+
+  /*Kort katogerier*/
+  .kort{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 30px;
+    text-decoration: none;
+}
+
+.kort a{
+    color: black; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+.kort a:hover{
+    color: green;
+}
+.kort img{
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+}
+
+.kort img:hover {
+    border: 1px solid;
+    box-shadow: 5px 10px#3c3b3b;
+    transition: 3s;
+
+  }
+
+.kort > section{
+    width: 425px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 20%;
+}
+
+.kort h4{
+    border: 2px solid #000;
+    width: fit-content;
+    padding: 2%;
+    margin: auto;
+    font-size: 100%;
+
+}
+
+/*Herunder er min footer*/
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-shadow: 2px 2px green;
+   
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    font-size: 17px;
+    color: white;
+    display: flex;
+}
+.footer-content hr{
+    border: 0;
+    border-top: 1px solid green;
+    width: 20%;
+    margin: 1%;
+
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16 0 48 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 40px;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: green;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
