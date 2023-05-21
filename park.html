@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <title>Viby j</title>
+<!--Dette herunder er min header.-->
+</head>
+<header class="headerburger">
+    <div class="dropdown">
+        <button class="dropbtn"><img src="images/burgermenumobil.png" alt=""></button>
+        <div class="dropdown-content">
+            <a href="index.html"><h2>Viby j</h2>
+            <hr class="burgerstreg">
+            <a href="park.html">Park</a>
+            <a href="Idraetsparken.html">Idrætspark</a>
+            <a href="eskelunden.html">Eskelunden</a>
+            <hr class="burgerstreg">
+            <a href="#">Om os</a>
+        </div>
+    </div>
+</header>
+<body>
+<main>
+
+    <section class="forsideto">
+        <h1>Park</h1>
+        <img id="forsidetobillede" src="images/Viby_Park,2.jpeg" alt="Park">
+
+    </section>
+    <section class="tekstet">
+        <h3>Natur, sø og meget mere</h3>
+    <div class="collage">
+        <div class="venstrekasse">
+
+        </div>
+        <div class="højrekasse">
+            <div class="højretop">
+
+            </div>
+            <div class="højrebund">
+                
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="brodtekst">
+            <p>Viby J Parken er en populær park beliggende i byen Viby J i Danmark.<br> Parken byder på et smukt og fredeligt miljø, der tiltrækker både lokale og besøgende. <br> Den har brede græsplæner, farverige blomsterbede og skyggefulde træer, der skaber en behagelig atmosfære.</p>
+            <br>
+        <button type="button" class="collapsible">Læs Mere</button>
+        <div class="content">
+            <br>
+            <p>Parken er ideel til afslapning, picnic og rekreative aktiviteter.<br> Besøgende kan nyde en spadseretur langs stierne, lege med børnene på legepladsen eller spille bold på de åbne plæner.<br> Der er også bænke og borde spredt rundt i parken, hvor man kan slå sig ned og nyde naturen eller have en hyggelig picnic med familie og venner.</p>
+            <br>
+        </div>
+
+    </section>
+    <section class="tekstet">
+        <h3>Fritidsaktiviteter</h3>
+    <div class="collage">
+        <div class="venstrekasse">
+
+        </div>
+        <div class="højrekasse">
+            <div class="højretop">
+
+            </div>
+            <div class="højrebund">
+                
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="brodtekst">
+            <p>Viby J Parken er også et populært mødested for fritidsaktiviteter.<br> Der er faciliteter til forskellige sportsgrene, herunder fodboldbaner, basketballbaner og tennisbaner. <br> Parken har også en skatepark, hvor skatere kan udfordre sig selv og vise deres færdigheder.</p>
+            <br>
+
+    </section>
+
+
+ 
+    </main>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+</body>
+
+</html>

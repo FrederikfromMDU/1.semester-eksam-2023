@@ -1,10 +1,10 @@
 *{
     margin: 0;
     padding:0;
-    font-family: 'IM Fell Double Pica SC', serif;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&display=swap');
+
 
 
 /*--Dropdown burgermenu--*/
@@ -49,9 +49,32 @@
 
 .dropdown:hover .dropdown-content{display: block;}
 
-
+/*Læs mere knap*/
+.collapsible {
+    background-color: #1E1E1E;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 10%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    border-radius: 20px;
+ 
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #000;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+  }
 /*Header*/
-
 header{
     width: 100%;
     height: 45px;
@@ -68,7 +91,6 @@ header{
 
 
 /*Forsiden*/
-
 #forsidebillede{
 position: relative;
 width: 100%;
@@ -77,6 +99,7 @@ display: block;
 z-index: 0;
 
 }
+
 
 .forside h1{
     color: #000;
@@ -117,7 +140,7 @@ z-index: 0;
     color: green;
 }
 .kort img{
-    border-radius: 50%;
+    border-radius: 200px;
     width: 80%;
     height: 80%;
 }
@@ -125,7 +148,7 @@ z-index: 0;
 .kort img:hover {
     border: 1px solid;
     box-shadow: 5px 10px#3c3b3b;
-    transition: 3s;
+    transition: 0.5s;
 
   }
 
@@ -146,6 +169,83 @@ z-index: 0;
 
 }
 
+
+  /*Forsiden til parken*/
+.forsideto{
+    color: #fff;
+    position: relative;
+    text-align: center;
+    top: 45px;
+    font-size: 70px;
+    font-family: 'IM Fell Double Pica SC', serif;
+    background-color: #1A6B49;
+}
+
+#forsidetobillede{
+    width: 55%;
+    border-radius: 10%;
+}
+
+.tekstet{
+    background-color: #1E1E1E;
+    width: 100%;
+}
+.tekstet h3{
+    color: #fff;
+    padding-top: 5%;
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+} 
+
+.brodtekst{
+    color: #fff;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    font-family:'Zilla Slab', serif;
+    background-color: #1A6B49;
+    padding-top: 15px;
+}
+
+  /*de tre billeder*/
+
+.collage{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-top: 100px;
+    background-color: #1E1E1E;
+    padding-bottom: 100px;
+}
+.venstrekasse{
+    background-color: red;
+    width: 30%;
+    height: 400px;
+    margin-right: 1%;
+    border-radius: 10px;
+}
+.højrekasse{
+    width: 30%;
+    height: 400px;
+}
+.højretop{
+    width: 100%;
+    height: 200px;
+    background-color: blue;
+    border-radius: 10px;
+}
+.højrebund{
+    width: 100%;
+    height: 190px;
+    background-color:brown;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+
+
 /*Herunder er min footer*/
 footer{
     position: relative;
@@ -154,7 +254,7 @@ footer{
     right: 0;
     background: #111;
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding-top: 40px;
     color: #fff;
 }
@@ -225,4 +325,39 @@ footer{
     text-transform: uppercase;
     opacity: .4;
     font-weight: 200;
+}
+
+/*-------------------Respondsiv-------------------*/
+
+/*-------------Mobil layout-------------*/
+@media screen and (max-width:874px) {
+    .collage{
+        display: block;
+        padding-top: 5%;
+    }
+    .venstrekasse{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .højrekasse{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 2%;
+    }
+    .tekstet h3{
+        font-size: 30px;
+        padding-top: 25%;
+    }
+    .forsideto h1{
+        font-size: 50px;
+    }
+    #forsidetobillede{
+        width: 90%;
+    }
+    #forsidebillede{
+        padding-top: 40%;
+    }
+    
 }

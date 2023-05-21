@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <title>Viby j</title>
+<!--Dette herunder er min header.-->
+</head>
+<header class="headerburger">
+    <div class="dropdown">
+        <button class="dropbtn"><img src="images/burgermenumobil.png" alt=""></button>
+        <div class="dropdown-content">
+            <a href="index.html"><h2>Viby j</h2>
+            <hr class="burgerstreg">
+            <a href="park.html">Park</a>
+            <a href="Idraetsparken.html">Idrætspark</a>
+            <a href="eskelunden.html">Eskelunden</a>
+            <hr class="burgerstreg">
+            <a href="#">Om os</a>
+        </div>
+    </div>
+</header>
+<body>
+<main>
+
+    <section class="forsideto">
+        <h1>Idrætspark</h1>
+        <img id="forsidetobillede" src="images/viby j idraetspark.jpeg" alt="Park">
+
+    </section>
+    <section class="tekstet">
+        <h3>Motion, faciliteter og meget mere</h3>
+    <div class="collage">
+        <div class="venstrekasse">
+
+        </div>
+        <div class="højrekasse">
+            <div class="højretop">
+
+            </div>
+            <div class="højrebund">
+                
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="brodtekst">
+            <p>Viby J Idrætspark er en omfattende sportsfacilitet beliggende i Viby J i Danmark.<br> idrætspark er et centrum for sportsaktiviteter og fællesskab og tiltrækker sportsentusiaster i alle aldre. <br> Idrætsparken har moderne faciliteter, herunder fodboldbaner, tennisbaner, atletikbaner og en multifunktionel sportsarena.</p>
+            <br>
+        <button type="button" class="collapsible">Læs Mere</button>
+        <div class="content">
+            <br>
+            <p>Disse faciliteter giver mulighed for forskellige sportsgrene og aktiviteter.<br> Fodboldbanerne er velplejede og anvendes af lokale hold og klubber til træning og kampe.<br>Tennisbanerne tilbyder mulighed for at spille både rekreativt og konkurrencepræget. <br> Atletikbanerne er velegnede til træning og konkurrencer inden for løb, spring og kast.</p>
+            <br>
+        </div>
+
+    </section>
+    <section class="tekstet">
+        <h3>Livet, fællesskab og meget mere</h3>
+    <div class="collage">
+        <div class="venstrekasse">
+
+        </div>
+        <div class="højrekasse">
+            <div class="højretop">
+
+            </div>
+            <div class="højrebund">
+                
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="brodtekst">
+            <p>Udover de sportslige faciliteter har idrætsparken også omklædningsrum, klubhuse og caféer, der er tilgængelige for sportsudøvere og besøgende.<br> Disse faciliteter bidrager til en behagelig oplevelse og fremmer fællesskabet blandt sportsentusiasterne. <br> Viby J Idrætspark spiller en vigtig rolle i at fremme sundhed, motion og fællesskab i Viby J og nærliggende områder. </p>
+            <br>
+     
+
+    </section>
+
+
+ 
+    </main>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+</body>
+
+</html>

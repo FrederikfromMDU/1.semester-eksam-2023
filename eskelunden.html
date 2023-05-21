@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <title>Eskelunden</title>
+<!--Dette herunder er min header.-->
+</head>
+<header class="headerburger">
+    <div class="dropdown">
+        <button class="dropbtn"><img src="images/burgermenumobil.png" alt=""></button>
+        <div class="dropdown-content">
+            <a href="index.html"><h2>Viby j</h2>
+            <hr class="burgerstreg">
+            <a href="park.html">Park</a>
+            <a href="Idraetsparken.html">Idrætspark</a>
+            <a href="eskelunden.html">Eskelunden</a>
+            <hr class="burgerstreg">
+            <a href="#">Om os</a>
+        </div>
+    </div>
+</header>
+<body>
+<main>
+
+    <section class="forsideto">
+        <h1>Eskelunden</h1>
+        <img id="forsidetobillede" src="images/eskelundenbillede.webp" alt="Park">
+
+    </section>
+    <section class="tekstet">
+        <h3>Natur, festivaler og meget mere</h3>
+    <div class="collage">
+        <div class="venstrekasse">
+
+        </div>
+        <div class="højrekasse">
+            <div class="højretop">
+
+            </div>
+            <div class="højrebund">
+                
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="brodtekst">
+            <p>Eskelunden er en smuk park beliggende i Viby J, Danmark. <br>Besøgende kan nyde en spadseretur eller slappe af på en bænk og beundre den naturlige skønhed omkring dem.<br> Parken er kendt for sin charmerende atmosfære og grønne omgivelser, der tiltrækker både lokale beboere og besøgende.<br> Den har velplejede græsplæner, farverige blomsterbede og frodige træer, der skaber en fredelig og naturskøn atmosfære. </p>
+            <br>
+        <button type="button" class="collapsible">Læs Mere</button>
+        <div class="content">
+            <br>
+            <p>Parken er også kendt for at være et populært mødested for arrangementer og festivaler.<br> Der arrangeres ofte koncerter, kulturelle begivenheder og markeder, der tiltrækker et bredt publikum.<br>  Disse begivenheder tilføjer en livlig og festlig stemning til Eskelunden.</p>
+            <br>
+        </div>
+
+    </section>
+    <section class="tekstet">
+        <h3>Aktiviteter, fællesskab og meget mere</h3>
+    <div class="collage">
+        <div class="venstrekasse">
+
+        </div>
+        <div class="højrekasse">
+            <div class="højretop">
+
+            </div>
+            <div class="højrebund">
+                
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="brodtekst">
+            <p>Eskelunden har også faciliteter til sportsaktiviteter.<br> Der er fodboldbaner, hvor lokale hold og klubber kan træne og spille kampe. <br> Parken byder også på muligheder for at spille basketball og andre udendørs sportsgrene.</p>
+            <br>
+    </section>
+
+
+ 
+    </main>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+</body>
+
+</html>
