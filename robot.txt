@@ -1,0 +1,6 @@
+user-agent:*
+allow:/index.html
+allow:/park.html
+allow:/idraetsparken.html
+allow:/eskelunden.html
+allow:/kontaktos.html
