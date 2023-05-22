@@ -9,10 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
 
-    <title>Viby j</title>
-<!--Dette herunder er min header.-->
+    <title>idrætspark</title>
+                                        <!--Dette herunder er min header.-->
 </head>
 <header class="headerburger">
     <div class="dropdown">
@@ -24,13 +25,13 @@
             <a href="Idraetsparken.html">Idrætspark</a>
             <a href="eskelunden.html">Eskelunden</a>
             <hr class="burgerstreg">
-            <a href="#">Om os</a>
+            <a href="kontaktos.html">Kontakt os</a>
         </div>
     </div>
 </header>
 <body>
 <main>
-
+                                        <!--Dette herunder er mine billedeside.-->
     <section class="forsideto">
         <h1>Idrætspark</h1>
         <img id="forsidetobillede" src="images/viby j idraetspark.jpeg" alt="Park">
@@ -38,7 +39,7 @@
     </section>
     <section class="tekstet">
         <h3>Motion, faciliteter og meget mere</h3>
-    <div class="collage">
+        <div class="collage" data-aos="fade-up">
         <div class="venstrekasse">
 
         </div>
@@ -52,8 +53,11 @@
         </div>
     </div>
     </section>
+                                        <!--Dette herunder er min brødtekstside.-->
     <section class="brodtekst">
+        <div data-aos="fade-up">
             <p>Viby J Idrætspark er en omfattende sportsfacilitet beliggende i Viby J i Danmark.<br> idrætspark er et centrum for sportsaktiviteter og fællesskab og tiltrækker sportsentusiaster i alle aldre. <br> Idrætsparken har moderne faciliteter, herunder fodboldbaner, tennisbaner, atletikbaner og en multifunktionel sportsarena.</p>
+        </div>
             <br>
         <button type="button" class="collapsible">Læs Mere</button>
         <div class="content">
@@ -63,9 +67,10 @@
         </div>
 
     </section>
+                                        <!--Dette herunder er mine billedeside.-->
     <section class="tekstet">
         <h3>Livet, fællesskab og meget mere</h3>
-    <div class="collage">
+        <div class="collage" data-aos="fade-up">
         <div class="venstrekasse">
 
         </div>
@@ -79,32 +84,80 @@
         </div>
     </div>
     </section>
+                                        <!--Dette herunder er min brødtekstside.-->
     <section class="brodtekst">
+        <div data-aos="fade-up">
             <p>Udover de sportslige faciliteter har idrætsparken også omklædningsrum, klubhuse og caféer, der er tilgængelige for sportsudøvere og besøgende.<br> Disse faciliteter bidrager til en behagelig oplevelse og fremmer fællesskabet blandt sportsentusiasterne. <br> Viby J Idrætspark spiller en vigtig rolle i at fremme sundhed, motion og fællesskab i Viby J og nærliggende områder. </p>
+        </div>
             <br>
      
-
     </section>
+
+                                            <!--Dette herunder er min findvej.-->
+ <section class="tekstet">
+    <h3>Find vej</h3>
+    <div class="collage" data-aos="fade-up">
+        <div class="findvej">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2223.744849211291!2d10.154891515945115!3d56.12693088065506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c401e8eb8a611%3A0x3008386a9a2e314!2sViby%20Idr%C3%A6tspark!5e0!3m2!1sda!2sdk!4v1684744950269!5m2!1sda!2sdk" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                                        
+    </div>
+</div>
+</section>
+
+<section class="brodtekst">
+    <div data-aos="fade-up">
+        <p>Adresse: skanderborgvej 244, 8260 Viby j<br>Busser: 4a, 6a, 14, 200, og 1a <br> Entré: Gratis</p>
+        <br>
+    </div>
+</section>
+
+                                            <!--Dette herunder er min footer.-->
+  <footer>
+    <div class="footer-content">
+        <h3>Viby j</h3>
+        <hr>
+        <br>
+        <ul class="socials">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+
+        </ul>
+    </div>
+    <br>
+    <div class="footer-bottom">
+        <p>Viby j &copy;2023 Oplevelser. designet af <span>Frederik Toft Nielsen</span></p>
+    </div>
+</footer>
 
 
  
     </main>
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-        
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-              content.style.display = "none";
-            } else {
-              content.style.display = "block";
+           <!--Dette herunder er min "Læs mere" dropdown knap.-->
+           <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
             }
-          });
-        }
-        </script>
+            </script>
+                    <!--Dette herunder er min animationer på tekst og billeder.-->
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+              AOS.init({
+                duration: 2500
+              });
+            </script>
 </body>
 
 </html>

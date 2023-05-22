@@ -9,10 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
 
     <title>Eskelunden</title>
-<!--Dette herunder er min header.-->
+                                    <!--Dette herunder er min header.-->
 </head>
 <header class="headerburger">
     <div class="dropdown">
@@ -24,7 +25,7 @@
             <a href="Idraetsparken.html">Idrætspark</a>
             <a href="eskelunden.html">Eskelunden</a>
             <hr class="burgerstreg">
-            <a href="#">Om os</a>
+            <a href="kontaktos.html">Kontakt os</a>
         </div>
     </div>
 </header>
@@ -36,9 +37,10 @@
         <img id="forsidetobillede" src="images/eskelundenbillede.webp" alt="Park">
 
     </section>
+                                 <!--Dette herunder er mine billedeside.-->
     <section class="tekstet">
         <h3>Natur, festivaler og meget mere</h3>
-    <div class="collage">
+        <div class="collage" data-aos="fade-up">
         <div class="venstrekasse">
 
         </div>
@@ -52,8 +54,11 @@
         </div>
     </div>
     </section>
+                                    <!--Dette herunder er min brødtekstside.-->
     <section class="brodtekst">
+        <div data-aos="fade-up">
             <p>Eskelunden er en smuk park beliggende i Viby J, Danmark. <br>Besøgende kan nyde en spadseretur eller slappe af på en bænk og beundre den naturlige skønhed omkring dem.<br> Parken er kendt for sin charmerende atmosfære og grønne omgivelser, der tiltrækker både lokale beboere og besøgende.<br> Den har velplejede græsplæner, farverige blomsterbede og frodige træer, der skaber en fredelig og naturskøn atmosfære. </p>
+        </div>
             <br>
         <button type="button" class="collapsible">Læs Mere</button>
         <div class="content">
@@ -63,9 +68,10 @@
         </div>
 
     </section>
+                                    <!--Dette herunder er mine billedeside.-->
     <section class="tekstet">
         <h3>Aktiviteter, fællesskab og meget mere</h3>
-    <div class="collage">
+        <div class="collage" data-aos="fade-up">
         <div class="venstrekasse">
 
         </div>
@@ -79,30 +85,77 @@
         </div>
     </div>
     </section>
+                                    <!--Dette herunder er min brødtekstside.-->
     <section class="brodtekst">
+        <div data-aos="fade-up">
             <p>Eskelunden har også faciliteter til sportsaktiviteter.<br> Der er fodboldbaner, hvor lokale hold og klubber kan træne og spille kampe. <br> Parken byder også på muligheder for at spille basketball og andre udendørs sportsgrene.</p>
+        </div>
             <br>
     </section>
 
+                                                <!--Dette herunder er min findvej.-->
+ <section class="tekstet">
+    <h3>Find vej</h3>
+    <div class="collage" data-aos="fade-up">
+        <div class="findvej">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.9874913407766!2d10.155830992356407!3d56.14002920420583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c415b097fbbfd%3A0x3edda016aab8c454!2sEskelunden!5e0!3m2!1sda!2sdk!4v1684745100074!5m2!1sda!2sdk" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
+</div>
+</section>
+
+<section class="brodtekst">
+    <div data-aos="fade-up">
+        <p>Adresse: Eskelundvej 13, 8260 Viby j<br>Busser: 6a <br> Entré: Gratis</p>
+        <br>
+    </div>
+</section>
+
+                                        <!--Dette herunder er min footer.-->
+ <footer>
+    <div class="footer-content">
+        <h3>Viby j</h3>
+        <hr>
+        <br>
+        <ul class="socials">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+
+        </ul>
+    </div>
+    <br>
+    <div class="footer-bottom">
+        <p>Viby j &copy;2023 Oplevelser. designet af <span>Frederik Toft Nielsen</span></p>
+    </div>
+</footer>
 
  
     </main>
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-        
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-              content.style.display = "none";
-            } else {
-              content.style.display = "block";
+          <!--Dette herunder er min "Læs mere" dropdown knap.-->
+          <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
             }
-          });
-        }
-        </script>
+            </script>
+                    <!--Dette herunder er min animationer på tekst og billeder.-->
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+              AOS.init({
+                duration: 2500
+              });
+            </script>
 </body>
 
 </html>
