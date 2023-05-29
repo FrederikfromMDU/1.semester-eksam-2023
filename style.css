@@ -6,6 +6,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&display=swap');
 
+h1{
+    color: #fff;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'IM Fell Double Pica SC', serif;
+}
 
 
 /*--Dropdown burgermenu--*/
@@ -174,18 +180,42 @@ z-index: 0;
 
   /*Forsiden til de park,idærtspark og eskelunden*/
 .forsideto{
-    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
     position: relative;
     text-align: center;
-    top: 45px;
     font-size: 70px;
     font-family: 'IM Fell Double Pica SC', serif;
-    background-color: #1A6B49;
+    top: 45px;
+    width: 100%;
+
+   
 }
 
+.forsideto img{
+
+    width: 100%;
+}
+
+.forsideto .overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    z-index: 1;
+
+    width: 100%;
+}
+
+.forsideto h1{
+    width: 100%;
+    color: #fff;
+}
 #forsidetobillede{
-    width: 55%;
-    border-radius: 10%;
+    width: 100%;
 }
 
 .tekstet{
@@ -206,9 +236,10 @@ z-index: 0;
     text-align: center;
     font-size: 20px;
     font-family:'Zilla Slab', serif;
-    background-color: #1A6B49;
+    background: linear-gradient(#1E1E1E 0%, #1A6B49 10%, #1A6B49 90%, #1E1E1E 100%);
     padding-top: 15px;
     align-items: center;
+  
 }
 .brodtekst p{
     width: 80%;
@@ -222,33 +253,20 @@ z-index: 0;
     display: flex;
     position: relative;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 30px;
     background-color: #1E1E1E;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
 }
-.venstrekasse{
-    background-color: red;
+.billedeside{
     width: 30%;
     height: 400px;
     margin-right: 1%;
     border-radius: 10px;
 }
-.højrekasse{
-    width: 30%;
+.billedeside img{
+    width: 100%;
     height: 400px;
-}
-.højretop{
-    width: 100%;
-    height: 200px;
-    background-color: blue;
     border-radius: 10px;
-}
-.højrebund{
-    width: 100%;
-    height: 190px;
-    background-color:brown;
-    border-radius: 10px;
-    margin-top: 10px;
 }
 
   /*Kontakt os siden*/
@@ -269,7 +287,7 @@ z-index: 0;
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: url("images/Kontaktbaggrund.png") no-repeat center;
+	background: url("Images/Kontaktbaggrund.png") no-repeat center;
 	background-size: cover;
 	filter: blur(10px);
 	z-index: -1;
@@ -286,7 +304,7 @@ z-index: 0;
 }
 
 .left{
-	background: url("images/Kontaktoverblik.jpeg") no-repeat center;
+	background: url("Images/viby\ overblik1.jpg") no-repeat center;
 	background-size: cover;
 	height: 100%;
 }
@@ -347,7 +365,7 @@ textarea{
 
 .map-responsive{
     overflow:hidden;
-    padding-bottom:56.25%;
+    padding-bottom:35.25%;
     position:relative;
     height:0;
 }
@@ -442,16 +460,12 @@ footer{
         display: block;
         padding-top: 5%;
     }
-    .venstrekasse{
-        width: 70%;
+    .billedeside{
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
-    }
-    .højrekasse{
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 2%;
+        padding-top: 20px;
+    
     }
     .tekstet h3{
         font-size: 30px;
@@ -461,7 +475,7 @@ footer{
         font-size: 50px;
     }
     #forsidetobillede{
-        width: 90%;
+        width: 100%;
     }
     #forsidebillede{
         padding-top: 40%;
